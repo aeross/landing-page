@@ -1,17 +1,15 @@
 
 h1, h2, p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-size: 48px;
-    font-weight: extra-bold;
     color: #F9FAF8;
 }
 
 h2 {
     font-size: 36px;
-    font-weight: extra-bold;
     color: #1F2937;
     text-align: center;
 }
@@ -76,15 +74,9 @@ button {
 
 #s2 {
     background-color: white;
-    /*border: 3px solid yellow;*/
     padding: 20px;
     height: 400px;
 }
-
-/*
-#s2 > * {
-    border: 2px solid red;
-}*/
 
 #s2 .img {
     margin: 40px 25%;
@@ -116,4 +108,78 @@ button {
     width: 95%;
     text-align: center;
     font-size: 15px;
+}
+
+/* Section 3 */
+
+#s3 {
+    background-color: #E5E7EB;
+    padding: 20px;
+    height: 400px;
+}
+
+#s3 p {
+    font-size: 32px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 7.5% 22% 2% 22.5%;
+}
+
+#s3 span {
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
+    margin-right: 22.5%;
+}
+
+/* Section 4 */
+
+#s4 {
+    background-color: white;
+    /*border: 3px solid yellow;*/
+    padding: 20px;
+    height: 400px;
+}
+
+#s4 .ad {
+    background-color: #3882F6;
+    margin: 10% 15%;
+    border-radius: 10px;
+    padding: 50px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+#s4 .text {
+    color: #E5E7EB;
+    margin: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#s4 .text > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#s4 .button {
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#s4 button {
+    border: 2px solid white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1F2937;
 }
