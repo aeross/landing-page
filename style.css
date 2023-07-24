@@ -1,6 +1,10 @@
 
-h1, h2, p {
+* {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
@@ -24,11 +28,44 @@ button {
     padding: 7px 25px;
 }
 
+/* Header */
+
+#navbar {
+    background-color: #1F2937;
+    padding: 15px 16% 15px 16.3%;
+    display: block;
+}
+
+#navbar span {
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bolder;
+    float: left;
+}
+
+#navbar .links {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+}
+
+#navbar .links > * {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar .links a:link, #navbar .links a:visited {
+    color: #F9FAF8;
+}
+
+#navbar .links a:hover {
+    color: #babbb9;
+}
+
 /* Section 1 */
 
 #s1 {
     background-color: #1f2937;
-    /*border: 3px solid yellow;*/
     padding: 20px;
     height: 400px;
 
@@ -43,7 +80,6 @@ button {
 }
 
 #s1 > * {
-    /*border: 2px solid red;*/
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 35%;
@@ -104,7 +140,6 @@ button {
 }
 
 #s2 .img > li > span {
-    /*border: 2px dotted darkblue;*/
     width: 95%;
     text-align: center;
     font-size: 15px;
@@ -138,7 +173,6 @@ button {
 
 #s4 {
     background-color: white;
-    /*border: 3px solid yellow;*/
     padding: 20px;
     height: 400px;
 }
@@ -147,7 +181,7 @@ button {
     background-color: #3882F6;
     margin: 10% 15%;
     border-radius: 10px;
-    padding: 50px;
+    padding: 40px 50px;
     
     display: flex;
     justify-content: space-around;
@@ -182,4 +216,7 @@ button {
 
 footer {
     background-color: #1F2937;
+    padding: 25px;
+    color: #E5E7EB;
+    text-align: center;
 }
