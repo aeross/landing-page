@@ -1,0 +1,119 @@
+
+h1, h2, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #3882F6;
+    font-weight: bold;
+    color: #E5E7EB;
+    border: none;
+    padding: 7px 25px;
+}
+
+/* Section 1 */
+
+#s1 {
+    background-color: #1f2937;
+    /*border: 3px solid yellow;*/
+    padding: 20px;
+    height: 400px;
+
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+#s1 p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#s1 > * {
+    /*border: 2px solid red;*/
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 35%;
+    margin: 5% 0;
+}
+
+#s1 .text button {
+    /* It adds margin to 10% for some reason instead of keeping it at 5% */
+    margin-top: 0;
+}
+
+#s1 .text > * {
+    margin: 16px 5px;
+}
+
+#s1 .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#s1 .img > * {
+    width: 100%;
+    height: 88%;
+}
+
+/* Section 2 */
+
+#s2 {
+    background-color: white;
+    /*border: 3px solid yellow;*/
+    padding: 20px;
+    height: 400px;
+}
+
+/*
+#s2 > * {
+    border: 2px solid red;
+}*/
+
+#s2 .img {
+    margin: 40px 25%;
+    padding: 0;
+
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+#s2 .img > li {
+    /*border: 2px dotted yellowgreen;*/
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#s2 .img > li > img {
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 125px;
+    height: 125px;
+    flex-shrink: 1;
+}
+
+#s2 .img > li > span {
+    /*border: 2px dotted darkblue;*/
+    width: 95%;
+    text-align: center;
+    font-size: 15px;
+}
